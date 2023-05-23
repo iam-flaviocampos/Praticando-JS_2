@@ -7,14 +7,9 @@ deve-se abstrair as condições matemáticas de existência de um triângulo).
 */
 
 function triangulos (lado1, lado2, lado3){
-    let lado01 = lado1
-    let lado02 = lado2
-    let lado03 = lado3
-    //let lados = [lado1, lado2, lado3]
-
-    if (lado01 == lado02 && lado02 == lado03){
+    if (lado1 == lado2 && lado2 == lado3){
         return "Equilátero"
-    } else if (lado01 == lado02 && lado02 != lado03){
+    } else if (lado1 == lado2 && lado2 != lado3){
         return "Isóceles"
     } else {
         return "Escaleno"
